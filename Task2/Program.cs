@@ -1,0 +1,15 @@
+﻿Console.Clear();
+Console.Write("Введите x точки А: ");
+double x1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите y точки А: ");
+double y1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите z точки А: ");
+double z1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите x точки B: ");
+double x2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите y точки B: ");
+double y2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите z точки В: ");
+double z2 = Convert.ToDouble(Console.ReadLine());
+double s = Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2) + Math.Pow(z1 - z2, 2));
+Console.WriteLine($"Расстояние между тремя точками равно {Math.Round(s, 2)}");
